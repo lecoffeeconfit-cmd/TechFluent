@@ -1,0 +1,46 @@
+{
+  "name": "techfluent",
+  "version": "0.1.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "ios": "expo start --ios",
+    "android": "expo start --android",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint App.tsx index.ts src tests scripts",
+    "test": "node scripts/test.cjs",
+    "export:web": "expo export --platform web && node scripts/offline-web.mjs",
+    "export:native": "expo export --platform ios --platform android --output-dir dist-native",
+    "test:browser": "node tests/browser.mjs",
+    "curriculum:sql": "node scripts/test.cjs --seed",
+    "test:ui": "node scripts/test.cjs --ui"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "57.0.16",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@supabase/supabase-js": "2.117.3",
+    "expo": "57.0.28",
+    "expo-secure-store": "57.0.4",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-safe-area-context": "5.7.0",
+    "react-native-svg": "15.15.4",
+    "react-native-url-polyfill": "4.0.0",
+    "react-native-web": "0.21.3"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.18",
+    "eslint": "9.39.5",
+    "eslint-config-expo": "57.0.2",
+    "typescript": "6.0.3",
+    "playwright": "1.64.1",
+    "@electric-sql/pglite": "0.3.16",
+    "jsdom": "26.1.0"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

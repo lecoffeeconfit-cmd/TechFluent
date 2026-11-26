@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "name": "TechFluent",
+    "slug": "techfluent",
+    "version": "0.1.0",
+    "scheme": "techfluent",
+    "orientation": "default",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icon.png",
+    "ios": { "supportsTablet": true, "bundleIdentifier": "com.techfluent.learning" },
+    "android": { "package": "com.techfluent.learning" },
+    "web": { "bundler": "metro", "output": "single", "favicon": "./assets/icon.png" },
+    "plugins": ["expo-secure-store"]
+  }
+}
